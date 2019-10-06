@@ -1,2 +1,2 @@
 # RaspPowerHat
-A raspberry hat to manage power from a var battery
+A raspberry hat to manage power from a car battery
