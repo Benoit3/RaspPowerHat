@@ -1,0 +1,14 @@
+[Unit]
+Description=RaspPower
+After=multi-user.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3  /home/pi/RaspPower/RaspPower.py
+WorkingDirectory=/home/pi/RaspPower
+StandardOutput=inherit
+StandardError=inherit
+User=pi
+ 
+Restart=always
+[Install]
+WantedBy=multi-user.target
