@@ -25,10 +25,10 @@ RaspPower.service into /etc/systemd/system with following access rights:<br/>
 -rw-r--r-- 1 root root 278 Jun 25 22:21 /etc/systemd/system/RaspPower.service
 
 ioManager.py, logging.conf, RaspPower.py, stopManager.py into /home/pi/RaspPower with following access rights:<br/>
--rw-r--r-- 1 pi pi    3138 Jun 25 22:32 ioManager.py
--rw-r--r-- 1 pi pi     440 Jun 25 21:35 logging.conf
--rw-r--r-- 1 pi pi    1181 Jun 25 22:29 RaspPower.py
--rw-r--r-- 1 pi pi     234 Jun 25 21:35 stopManager.py
+-rw-r--r-- 1 pi pi    3138 Jun 25 22:32 ioManager.py<br/>
+-rw-r--r-- 1 pi pi     440 Jun 25 21:35 logging.conf<br/>
+-rw-r--r-- 1 pi pi    1181 Jun 25 22:29 RaspPower.py<br/>
+-rw-r--r-- 1 pi pi     234 Jun 25 21:35 stopManager.py<br/>
 
 You may now try the system with the command : python3 RaspPower.py<br>
 Standard output shall display lines like:<br/>
