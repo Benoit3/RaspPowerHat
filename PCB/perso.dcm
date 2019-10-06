@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TSR_2-2450
+D 2A step-down regulator module, fixed 5V output voltage, 5-36V input voltage, -40°C to +85°C temperature range, TO-220 compatible LM78xx replacement
+K dc-dc traco buck
+F http://www.tracopower.com/products/tsr1.pdf
+$ENDCMP
+#
+#End Doc Library
