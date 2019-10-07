@@ -1,6 +1,6 @@
 # RaspPowerHat
 A raspberry hat designed to manage raspberry powering from a car battery.<br>
-The purpose of the hat is to switch on the RaspBerry when car accessory power is switched on (easy ;-) ) and to switch it off properly (after linux shutdown ) when the car accessory power is switched off (more difficult)
+The purpose of the hat is to switch on the RaspBerry when car accessory power is switched on (easy ;-) ) and to switch it off properly (after linux shutdown ) when the car accessory power is switched off (more difficult).
 
 To achieve this objective, the raspberry itself is powered by a permanent +12V power line through a 5V step down converter. A connection to ACC power supply (switched ignition) allow to switch on and later off the raspberry.<br>
 
