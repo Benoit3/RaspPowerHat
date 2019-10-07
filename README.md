@@ -5,5 +5,6 @@ The purpose of the hat is to switch on the RaspBerry when car accessory power is
 To achieve this objective, the raspberry itself is powered by a permanent +12V power line through a 5V step down converter. A connection to ACC power supply (switched ignition) allow to switch on and later off the raspberry.<br>
 
 The PCB is designed to fit well on a Raspberry PI Z but can also be used on Raspberry 2 or 3.<br/>
+![Front view](Hat1.png)
 
 One limitation is the output current of the 5V converter which is 2A ( biggest converter I found to be soldered on the PCB)
