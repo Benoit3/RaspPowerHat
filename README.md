@@ -6,4 +6,4 @@ To achieve this objective, the raspberry itself is powered by a permanent +12V p
 
 The PCB is designed to fit well on a Raspberry PI Z but can also be used on Raspberry 2 or 3.<br/>
 
-One limitation is the output current of the 5V converter which 2A ( biggest converter I found to be soldered on the PCB)
+One limitation is the output current of the 5V converter which is 2A ( biggest converter I found to be soldered on the PCB)
