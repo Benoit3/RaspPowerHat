@@ -11,3 +11,5 @@ Black wire is for ground, red for permanent 12 to 24 V, yellow is for accessorie
 
 One limitation is the output current of the 5V converter which is 2A. This is the biggest converter I found which can be soldered on the back of the PCB.
 ![Front view](Hat2.png)
+
+You can get information about [PCB](PCB/README.md)
