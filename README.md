@@ -7,5 +7,7 @@ To achieve this objective, the raspberry itself is powered by a permanent +12V p
 The PCB is designed to fit well on a Raspberry PI Z but can also be used on Raspberry 2 or 3.<br/>
 ![Front view](Hat1.png)
 
+Black wire is for ground, red for permanent 12 to 24 V, yellow is for accessories ON or ignition On information
+
 One limitation is the output current of the 5V converter which is 2A. This is the biggest converter I found which can be soldered on the back of the PCB.
 ![Front view](Hat2.png)
