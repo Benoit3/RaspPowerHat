@@ -1,5 +1,5 @@
 This folder contains definition of the electronic part of the Hat. 
-Files can be edited with [Kicad PCB](http://www.kicad-pcb.org/) ,a Cross Platform and Open Source Electronics Design Automation Suite .
+Files can be edited with [Kicad PCB](http://www.kicad-pcb.org/) , a Cross Platform and Open Source Electronics Design Automation Suite .
 ![Schematic](schematic.png)
 
 Some explanation :
