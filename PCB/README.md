@@ -1,4 +1,6 @@
 This folder contains definition of the electronic part of the Hat. 
+
+Schematic and PCBs habe made starting with [template from mikelawrence](https://github.com/mikelawrence/RPi_Zero_pHat_Template). 
 Files can be edited with [Kicad PCB](http://www.kicad-pcb.org/) , a Cross Platform and Open Source Electronics Design Automation Suite .
 ![Schematic](schematic.png)
 
