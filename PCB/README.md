@@ -11,3 +11,5 @@ Some explanation :
 - JP1 : pin 1 and 2 need to be shorten as the SHUTDOWN request is now done through the I2C bus and not through a dedicated digital input
 - J3, J4, R3, D6 are not necessary for a generci usage and were dedicated to data saving of GPS chipset
 - R11, R12, R13, R14, U6, U7 are there for additionnal isolated input. But I've never sold neither tested them. Forget them.
+
+References of used components can be browse by opening schematic file (RaspPowerHat.sch) with KiCad PCB.
