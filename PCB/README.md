@@ -15,3 +15,5 @@ Some explanation :
 - R11, R12, R13, R14, U6, U7 are there for additionnal isolated input. But I've never sold neither tested them. Forget them.
 
 References of used components can be browsed by opening schematic file (RaspPowerHat.sch) with KiCad PCB.
+
+File package to order PCB manufacturing can be found [here](PCB.zip)
