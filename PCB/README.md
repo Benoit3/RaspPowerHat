@@ -17,3 +17,11 @@ Some explanation :
 References of used components can be browsed by opening schematic file (RaspPowerHat.sch) with KiCad PCB.
 
 File package to order PCB manufacturing can be found [here](PCB.zip)
+
+
+Here is the result with hand soldering:
+- Front side:
+![PCB_FRONT](PCB_F.jpg)
+
+- Back side :
+![PCB_FRONT](PCB_B.jpg)
