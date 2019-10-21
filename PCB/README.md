@@ -19,9 +19,10 @@ References of used components can be browsed by opening schematic file (RaspPowe
 File package to order PCB manufacturing can be found [here](PCB.zip)
 
 
-Here is the result with hand soldering:
+Here is the result with hand soldering. It is possible to use stackable header to add another PI hat on top of it. 
 - Front side:
 ![PCB_FRONT](PCB_F.jpg)
 
+The switched regulator TSR 2-2450 normaly sold on the front side (as on the design) can also be sold on the back side to adjust height of the PCB stack.
 - Back side :
 ![PCB_FRONT](PCB_B.jpg)
