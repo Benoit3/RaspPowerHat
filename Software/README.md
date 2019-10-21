@@ -1,4 +1,4 @@
-This folder contains the software script to be run in the Raspberry. It has been tested with Raspbian stretch on a Raspberry Zero Wifi. 
+This folder contains the software script to be run in the Raspberry. It has been tested with Raspbian stretch lite on a Raspberry PI Zero Wifi. 
 The script is written in Python3.
 
 To install it, you need to type following commands to install libraries:<br/>
