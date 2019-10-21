@@ -17,3 +17,7 @@ One limitation is the output current of the 5V converter which is 2A. This is th
 The Hat is build using an ATTINY 45.
 
 You can get information about [Hardware and PCB](PCB/README.md), [Firmware](Firmware/README.md) and [PI test software](Software/README.md)
+
+Here is the result with hand soldering:
+![PCB_FRONT](PCB_F.JPG)
+
