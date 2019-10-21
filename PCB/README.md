@@ -19,7 +19,8 @@ References of used components can be browsed by opening schematic file (RaspPowe
 File package to order PCB manufacturing can be found [here](PCB.zip)
 
 
-Here is the result with hand soldering. It is possible to use stackable header to add another PI hat on top of it. 
+Here is the result with hand soldering. It is possible to use stackable header to add another PI hat on top of it.
+The Hat is larger than a standard PI Zero one to the 5 leds.
 - Front side:
 ![PCB_FRONT](PCB_F.jpg)
 
