@@ -27,3 +27,5 @@ The Hat is larger than a standard PI Zero one to the 5 leds.
 The switched regulator TSR 2-2450 normaly sold on the front side (as on the design) can also be sold on the back side to adjust height of the PCB stack.
 - Back side :
 ![PCB_FRONT](PCB_B.jpg)
+
+You can now find the ATTINY 45 firmware [here](../Firmware)
