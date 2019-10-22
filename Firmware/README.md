@@ -1,4 +1,7 @@
 This folder contains the ATtiny 45 firmware used on the RaspPower Hat.
+
+To add the ATTINY 45 to boards available for Arduino Uno, have a look on [damellis github](https://github.com/damellis/attiny).
+
 The ATtiny 45 shall be used with a 8 MHz clock to answer properly as an I2C slave.
 
 The I2C stack is issued from https://github.com/lucullusTheOnly/TinyWire.
