@@ -1,11 +1,13 @@
 This folder contains the software script to be run in the Raspberry. It has been tested with Raspbian stretch lite on a Raspberry PI Zero Wifi. 
-The script is written in Python3.
+Scripts are written in Python3.
 
-To install it, you need to type following commands to install libraries:<br/>
+<h2>Test of the PCB</h2>
+
+You need first to install python3 libraries:<br/>
 sudo apt-get install python3-rpi.gpio<br/>
 sudo apt-get install python3-smbus<br/>
 
-You need to modify /boot/config.txt :<br/>
+You need also to modify /boot/config.txt :<br/>
 
 #to enable GPIO26 to go low when cpu is in halted state<br/>
 dtoverlay=gpio-poweroff,active_low="y" <br/>
@@ -19,6 +21,12 @@ You need also to add to the /etc/modules file following lines:<br/>
 #request i2c module to be loaded in the kernel<br/>
 i2c-dev<br/>
 
+You can now test the PCB with the following line:
+python3 i2ctest.py
+
+The script will display
+
+<h2>Setup of the service</h2>
 You need to copy following files :
 
 RaspPower.service into /etc/systemd/system with following access rights:<br/>
