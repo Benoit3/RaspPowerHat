@@ -30,20 +30,22 @@ where data are :
 - counter of i2c slave busy info : can increase slowly
 - counter of i2c frame error (first byte not equal to 1, second to 0x10 (version error), or checksum) : should stay at 0
 - 11 byte array :
-  - 1 (frame is OK)
-  - 16 (frame protocol version 0x10)
-  - buffer update counter : incremented every 100 ms 
-  - high byte of Vacc value (unit: tenth of volt)
-  - low byte of Vacc value (unit: tenth of volt)
-  - timer used to validate change of Vacc_Status (unit : 100ms)
-  - Vacc_Status
-  - high byte of shutting down timer (unit: 1s)
-  - low byte of shutting down timer (unit : 1s)
-  - Power Status : 1=ON, 2=shutdown requested
-  - chksum (XOR of above bytes)
+  - 0: 1 (frame is OK)
+  - 1: 16 (frame protocol version 0x10)
+  - 2: buffer update counter : incremented every 100 ms 
+  - 3: high byte of Vacc value (unit: tenth of volt)
+  - 4: low byte of Vacc value (unit: tenth of volt)
+  - 5: timer used to validate change of Vacc_Status (unit : 100ms)
+  - 6: Vacc_Status
+  - 7: high byte of shutting down timer (unit: 1s)
+  - 8: low byte of shutting down timer (unit : 1s)
+  - 9: Power Status : 1=ON, 2=shutdown requested
+  - 10: chksum (XOR of above bytes)
+
+Remark : if byte 9 equal 2, shutting down is requested. Power supply will be switch off as soon as GPIO26 becomes low or shutting down timer is expired (to avoid to dry the battery in case of PI software issue), even if Vacc becomes high again. In this case PI will be powered again and retstart immediately after shutdown.
 
 <h2>Setup of the service</h2>
-You need to copy following files :
+To have a service continously monitoring Vacc and managing shutdown, you need to copy following files :
 
 RaspPower.service into /etc/systemd/system with following access rights:<br/>
 -rw-r--r-- 1 root root 278 Jun 25 22:21 /etc/systemd/system/RaspPower.service
@@ -71,4 +73,4 @@ sudo systemctl enable RaspPower.service
 To launch it without waiting a reboot:<br/>
 sudo systemctl start RaspPower.service
 
-
+You are now reading to switch on/off your PI by changing the Vacc input voltage (threshold is 11 V +/- 0.5V)
