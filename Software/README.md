@@ -24,7 +24,23 @@ i2c-dev<br/>
 You can now test the PCB with the following line:
 python3 i2ctest.py
 
-The script will display
+The script will display ten lines per second like: 0 0 0 [1, 16, 191, 0, 127, 0, 1, 0, 0, 1, 209]
+where data are :
+- counter of i2c read exception :should stay at 0
+- counter of i2c slave busy info : can increase slowly
+- counter of i2c frame error (first byte not equal to 1, second to 0x10 (version error), or checksum) : should stay at 0
+- 11 byte array :
+  - 1 (frame is OK)
+  - 16 (frame protocol version 0x10)
+  - buffer update counter : incremented every 100 ms 
+  - high byte of Vacc value (unit: tenth of volt)
+  - low byte of Vacc value (unit: tenth of volt)
+  - timer used to validate change of Vacc_Status (unit : 100ms)
+  - Vacc_Status
+  - high byte of shutting down timer (unit: 1s)
+  - low byte of shutting down timer (unit : 1s)
+  - Power Status : 1=ON, 2=shutdown requested
+  - chksum (XOR of above bytes)
 
 <h2>Setup of the service</h2>
 You need to copy following files :
